@@ -1,0 +1,89 @@
+.launchContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  background-color: #46B19C;
+  color: black;
+  padding-left: 8px;
+  text-align: left;
+}
+
+.launchContainer h2 {
+  width: 100%;
+  background-color: black;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 28px;
+}
+
+.launchText,
+.launchImgContainer {
+  width: 100%;
+}
+.launchImg {
+  width: 100%;
+}
+
+.launchImgBlock{
+  height: 50%;
+  width: 8px;
+  background-color: #46B19C;
+  position: absolute;
+  left: 0;
+}
+
+.launchText {
+  background-color: #B6BECA;
+  font-size: 12px;
+  padding-left: 8px;
+  margin-top: -4px;
+  padding-top: 4px;
+}
+
+.txt-left{
+  margin: 4px 0;
+  width: 60%;
+  font-size: 12px;
+}
+
+.txt-main{
+  margin-bottom: 8px;
+}
+
+.btn-launch {
+  background-color: #E36B37;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.previous-btn{
+  margin-right: 188px;
+}
+
+.previousLaunchContainer{
+  width: 25%;
+  border-bottom: 0.1px solid #B6BECA ;
+}
+
+.previousLaunchContainer p{
+  font-size: 12px;
+}
+
+.launchBottomContainer{
+  height: 40px;
+  width: 100%;
+  background-color: black;
+}
+
+.launchFlex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  text-align: center;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+
+  <title>SpaceX Launches</title>
+
+
+  <link rel="stylesheet" href="./css/launch.css">
+  <link rel="stylesheet" href="./css/styling.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/sizing.css">
+
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><img class="logo" src="./img/logo/spacex-logo-black-and-white.png" alt="SpaceX logo"></a>
+
+    <div class="navMobile" href="" onclick="navClicked()">
+      <p>Menu</p>
+      <span class="burgerIcons"></span>
+    </div>
+    <div class="navTitleContainer">
+      <a>
+        <div class="navTitle" onclick ="navExtendedSpacecrafts()">Spacecrafts</div>
+      </a>
+      <a class="navTitle" href="launches.html">
+        <div>Launches</div>
+      </a>
+      <a class="navTitle" href="contact.html">
+        <div>Contact us</div>
+      </a>
+    </div>
+    <div class="spacecraftNav">
+      <a href="#"><div>Falcon 9</div></a>
+      <a href="spacecrafts.html"><div>Dragon</div></a>
+      <a href="#"><div>Falcon Heavy</div></a>
+      <a href="#"><div>Starship</div></a>
+    </div>
+  </header>
+
+    <main>
+      <div class="bannerContainer launchContainer1 bannerWhite">
+        <div class="banner bannerMain">
+          <h2>Launches</h2>
+        </div>
+        <img class="arrowIcon arrowIcon1" src="./img/icons/arrowBlueOrange.svg" alt="Arrow pointing down.">
+      </div>
+      <div class="bannerContainer bannerContainer14 bannerWhite">
+        <div class="banner bannerMain">
+          <h2>Upcoming Missions</h2>
+        </div>
+      </div>
+
+      <div class="launchContainer" id="launchContainer"></div>
+      <div class="launchBottomContainer"></div>
+
+      <div class="bannerContainer bannerContainer15 bannerWhite">
+        <div class="banner bannerMain">
+          <h2>Completed Missions</h2>
+        </div>
+      </div>
+      <div class="launchFlex">
+        <div class="previousLaunchContainer plc-date previousLaunchHeader">
+          <p>Launch Date</p>
+        </div>
+        <div class="previousLaunchContainer plc-customer previousLaunchHeader">
+          <p>Customer</p>
+        </div>
+        <div class="previousLaunchContainer plc-launchSite previousLaunchHeader">
+          <p>Launch Site</p>
+        </div>
+        <div class="previousLaunchContainer plc-vehicle previousLaunchHeader">
+          <p>Vehicle</p>
+        </div>
+      </div>
+
+      <div class="launchCard"></div>
+
+
+
+
+    </main>
+
+
+    <footer class="footerContainer">
+      <div class="flexFooter flex1"><a href="#"><img class="footerLogo" src="./img/logo/spacex-logo-black-and-white.png"
+            alt="Bottom logo"></a>
+      </div>
+      <div class="flexFooter flex2">
+        <p>© 2020 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
+      </div>
+      <div class="flexFooter flex3">
+        <a href="https://twitter.com/spacex">
+          <p>Twitter</p>
+        </a>
+        <a href="https://www.youtube.com/spacex">
+          <p>YouTube</p>
+        </a>
+        <a href="https://www.flickr.com/photos/spacex">
+          <p>Flickr</p>
+        </a>
+        <a href="https://www.instagram.com/spacex/">
+          <p>Instagram</p>
+        </a>
+        <a href="https://www.spacex.com/sites/spacex/files/privacy_policy_spacex.pdf">
+          <p>Privacy</p>
+        </a>
+      </div>
+    </footer>
+  <script src="./js/apis.ts"></script>
+  <script src="./js/scripts.ts"></script>
+</body>
+
+</html>

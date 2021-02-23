@@ -1,0 +1,72 @@
+/* put this file into css folder, and delete dead code and comment that are not usefull*/
+/* .bannerHeader{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bannerText{
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    width: 800px;
+    font-size: 36px;
+} */
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1024px){
+    .navMobile{
+       display: none;
+    }
+
+    .navWeb{
+        display: block;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .bannerContainer{
+        height: 768px;
+        width: auto;
+    }
+
+
+
+
+
+.bannerContainer1{
+    background-image: url(../img/finalImages/1024x768-Laptop/banner1-2.jpg);
+}
+.bannerContainer2{
+    background-image: url(../img/adobeImages/original/adobe5.jpeg);
+}
+.bannerContainer3{
+    background-image: url(../img/adobeImages/original/adobe6.jpeg);
+}
+.bannerContainer4{
+    background-image: url(../img/adobeImages/original/adobe7.jpeg);
+}
+.bannerContainer5{
+    background-image: url(../img/spaceXConsole/suit.jpg);
+}
+.bannerContainer6{
+    background-image: url(../img/spaceXConsole/dragonHovering.jpg);
+}
+.bannerContainer7{
+    background-image: url(../img/adobeImages/original/adobe4-2.jpg);
+}
+.bannerContainer8{
+    background-image: url(../img/spaceXConsole/dragonLaunch.jpg);
+}
+
+}
+
+@media screen and (min-width: 1440px){
+
+}

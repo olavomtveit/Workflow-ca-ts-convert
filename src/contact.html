@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+
+  <title>SpaceX Contact</title>
+
+
+  <link rel="stylesheet" href="./css/contact.css">
+  <link rel="stylesheet" href="./css/styling.css">
+  <link rel="stylesheet" href="./css/nav.css">
+  <link rel="stylesheet" href="./css/sizing.css">
+
+</head>
+
+<body>
+  <header>
+    <a href="./index.html"><img class="logo" src="./img/logo/spacex-logo-black-and-white.png" alt="SpaceX logo"></a>
+
+    <div class="navMobile" href="" onclick="navClicked()">
+      <p>Menu</p>
+      <span class="burgerIcons"></span>
+    </div>
+    <div class="navTitleContainer">
+      <a>
+        <div class="navTitle" onclick ="navExtendedSpacecrafts()">Spacecrafts</div>
+      </a>
+      <a class="navTitle" href="launches.html">
+        <div>Launches</div>
+      </a>
+      <a class="navTitle" href="contact.html">
+        <div>Contact us</div>
+      </a>
+    </div>
+    <div class="spacecraftNav">
+      <a href="#"><div>Falcon 9</div></a>
+      <a href="spacecrafts.html"><div>Dragon</div></a>
+      <a href="#"><div>Falcon Heavy</div></a>
+      <a href="#"><div>Starship</div></a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Took most of this contact form code from an earlier assignemnt I had done. -->
+    <div class="bannerContainer contactContainer1 bannerWhite">
+      <div class="banner bannerMain">
+        <h2>Contact us</h2>
+      </div>
+      <img class="arrowIcon arrowIcon1" src="./img/icons/arrowOrangeBlue.svg" alt="Arrow pointing down.">
+    </div>
+    <section class="formContainer">
+      <h3>Send us your message today</h3>
+      <form id="contactForm">
+        <div class="form-group">
+          <input class="form-control" name="firstName" id="firstName" placeholder="First Name">
+          <div class="form-error" id="firstNameError">Please enter your first name.</div>
+          <img class="form-validated validated-icon" id="firstNameValidated" src="./img/icons/valdiatedForm.svg" alt="First Name validated">
+        </div>
+        <div class="form-group">
+          <input class="form-control" name="lastName" id="lastName" placeholder="Last Name">
+          <div class="form-error" id="lastNameError">Please enter your last name.</div>
+          <img class="form-validated validated-icon" id="lastNameValidated" src="./img/icons/valdiatedForm.svg" alt="Last Name validated">
+        </div>
+        <div class="form-group">
+          <input class="form-control" name="email" id="email" placeholder="Email">
+          <div class="form-error" id="emailError">Please enter your email address.</div>
+          <div class="form-error" id="invalidEmailError">Please enter a valid email address.</div>
+          <img class="form-validated validated-icon" id="emailValidated" src="./img/icons/valdiatedForm.svg" alt="Email validated">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" id="message" placeholder="Message (at least 10 characters)"></textarea>
+          <div class="form-error" id="messageError">The message must be at least 10 characters long.</div>
+          <img class="form-validated validated-icon" id="messageValidated" src="./img/icons/valdiatedForm.svg" alt="Message validated">
+        </div>
+        <button type="submit" class="btn btn-primary formButton" id="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footerContainer">
+    <div class="flexFooter flex1"><a href="#"><img class="footerLogo" src="./img/logo/spacex-logo-black-and-white.png"
+          alt="Bottom logo"></a>
+    </div>
+    <div class="flexFooter flex2">
+      <p>© 2020 SPACE EXPLORATION TECHNOLOGIES CORP.</p>
+    </div>
+    <div class="flexFooter flex3">
+      <a href="https://twitter.com/spacex">
+        <p>Twitter</p>
+      </a>
+      <a href="https://www.youtube.com/spacex">
+        <p>YouTube</p>
+      </a>
+      <a href="https://www.flickr.com/photos/spacex">
+        <p>Flickr</p>
+      </a>
+      <a href="https://www.instagram.com/spacex/">
+        <p>Instagram</p>
+      </a>
+      <a href="https://www.spacex.com/sites/spacex/files/privacy_policy_spacex.pdf">
+        <p>Privacy</p>
+      </a>
+    </div>
+  </footer>
+  <script src="./js/scripts.ts"></script>
+  <script src="./js/contact.ts"></script>
+</body>
+
+</html>

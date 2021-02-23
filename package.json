@@ -1,0 +1,25 @@
+{
+  "name": "workflow-ca",
+  "version": "1.0.0",
+  "description": "> Space X / NASA Microsite",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "parcel": "parcel src/index.html",
+    "scripts": "tsc src/js/scripts.ts --watch",
+    "contact": "tsc src/js/contact.ts --watch",
+    "apis": "tsc src/js/apis.ts --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ]
+}

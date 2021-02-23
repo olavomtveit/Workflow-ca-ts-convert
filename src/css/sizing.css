@@ -1,0 +1,789 @@
+/*////
+Nav/Footer
+////*/
+@media screen and (min-width: 1024px) {
+  .navMobile {
+    left: 0;
+    position: relative;
+  }
+
+  .navMobile p {
+    position: absolute;
+    left: 50px;
+    top: -8px;
+
+    display: flex;
+    flex: row;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .burgerIcons {
+    margin-top: 12px;
+  }
+
+  .navTitle {
+    margin: 4px 0;
+  }
+
+  .navTitleContainer {
+    margin-left: 8px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .spacecraftNav {
+    flex-direction: row;
+
+    width: 35%;
+    left: 96px;
+    top: 84px;
+  }
+
+  .spacecraftNav a {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 30%;
+  }
+
+  .footerContainer {
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flex1 {
+    width: 25%;
+  }
+
+  .flex2 {
+    width: 20%;
+    opacity: 50%;
+  }
+
+  .flex3 {
+    width: 25%;
+    font-size: 40px
+  }
+
+  .flexFooter p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .spacecraftNav {
+    width: 28%;
+    left: 112px;
+    top: 98px;
+  }
+
+  .navTitleContainer {
+    font-size: 22px;
+  }
+
+  .spacecraftNav a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .navMobile p {
+    left: 60px;
+    top: -18px;
+    font-size: 30px;
+  }
+
+  .spacecraftNav {
+    width: 28%;
+    left: 100px;
+    top: 128px;
+  }
+
+  .spacecraftNav a {
+    font-size: 22px;
+  }
+
+  .navTitleContainer {
+    font-size: 28px;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+  .burgerIcons,
+  .burgerIcons::before,
+  .burgerIcons::after {
+    height: 6px;
+    width: 44px;
+  }
+}
+
+/*////
+landing page/index page.
+////*/
+@media screen and (min-width: 1024px) {
+  h2 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 24px;
+    font-family: Helvetica, sans-serif;
+  }
+
+  .bannerContainer {
+    height: 768px;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  .bannerSecondary {
+    margin-left: 0px;
+  }
+
+  .banner2 {
+    right: 40px;
+    width: 35%;
+  }
+
+  .banner3 {
+    left: 40px;
+    width: 40%;
+  }
+
+  .banner4 {
+    right: 40px;
+    width: 30%;
+  }
+
+  .banner5 {
+    left: 120px;
+    width: 40%;
+  }
+
+  .banner6 {
+    right: 160px;
+    width: 30%;
+    top: 20%;
+  }
+
+  .banner7 {
+    top: 30%;
+    left: 15%;
+    width: 20%
+  }
+
+  .banner8 {
+    width: 30%;
+    right: 80px;
+  }
+
+  .bannerContainer1 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner1.jpg);
+  }
+
+  .bannerContainer2 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner2.jpg);
+  }
+
+  .bannerContainer3 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner3.jpg);
+  }
+
+  .bannerContainer4 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner4.jpg);
+  }
+
+  .bannerContainer5 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner5.jpg);
+  }
+
+  .bannerContainer6 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner6.jpg);
+  }
+
+  .bannerContainer7 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner7.jpg);
+  }
+
+  .bannerContainer8 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner8.jpg);
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+  .colorBox {
+    width: 60px;
+    height: 18px;
+  }
+
+}
+
+@media screen and (min-width: 1366px) {
+  .bannerContainer1 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner1.jpg);
+  }
+
+  .bannerContainer2 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner2.jpg);
+  }
+
+  .bannerContainer3 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner3.jpg);
+  }
+
+  .bannerContainer4 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner4.jpg);
+  }
+
+  .bannerContainer5 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner5.jpg);
+  }
+
+  .bannerContainer6 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner6.jpg);
+  }
+
+  .bannerContainer7 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner7.jpg);
+  }
+
+  .bannerContainer8 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner8.jpg);
+  }
+
+  .banner6 {
+    right: 240px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+}
+
+@media screen and (min-width: 1920px) {
+  .bannerContainer1 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner1.jpg);
+  }
+
+  .bannerContainer2 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner2.jpg);
+  }
+
+  .bannerContainer3 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner3.jpg);
+  }
+
+  .bannerContainer4 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner4.jpg);
+  }
+
+  .bannerContainer5 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner5.jpg);
+  }
+
+  .bannerContainer6 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner6.jpg);
+  }
+
+  .bannerContainer7 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner7.jpg);
+  }
+
+  .bannerContainer8 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner8.jpg);
+  }
+
+  .bannerContainer {
+    height: 1080px;
+  }
+
+  .banner6 {
+    right: 240px;
+  }
+
+  .button {
+    font-size: 18px;
+  }
+
+  h2,
+  h1 {
+    font-size: 48px;
+  }
+
+  p {
+    font-size: 32px;
+  }
+
+  .arrowIcon {
+    width: 72px;
+  }
+
+  .colorBox {
+    width: 80px;
+    height: 24px;
+  }
+
+  .bannerMain {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/*////
+spacecrafts/dragon.
+////*/
+@media screen and (min-width: 1024px) {
+  .shipContainer1 {
+    background-image: url(../img/finalImages/1024x768-Laptop/bannerShip.jpg);
+  }
+
+  .bannerContainer9 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner9.jpg);
+  }
+
+  .banner9 {
+    width: 100%;
+    top: 38%;
+  }
+
+  .banner9 p {
+    width: 40%;
+    text-align: left;
+  }
+
+  .dragonTxt1 {
+    margin-left: 50px;
+  }
+
+  .dragonTxt2 {
+    position: absolute;
+    margin-left: 50%;
+    top: 80%;
+  }
+
+  .bannerContainer10 {
+    background-image: none;
+    top: 0px;
+    height: auto;
+  }
+
+  .banner10 {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    top: 0;
+  }
+
+  .banner10Txt {
+    width: 50%;
+    font-size: 8px;
+  }
+
+  .banner10Txt p,
+  .banner9 p,
+  .banner12 p {
+    font-size: 18px;
+  }
+
+  .interiorImg {
+    display: block;
+    width: 50%;
+    right: 0px;
+    position: absolute;
+  }
+
+  .bannerContainer10 p {
+    position: relative;
+  }
+
+  .banner10Text1 {
+    top: -0px;
+    width: 80%;
+    left: 10%;
+  }
+
+  .banner10Text2 {
+    bottom: 0px;
+    width: 80%;
+    left: 10%;
+  }
+
+  .shipStatFlexbox {
+    width: 100%;
+    margin-top: 32px;
+    position: relative;
+    justify-content: center;
+
+    margin-left: 0 auto;
+  }
+
+  .shipStatFlexbox div {
+    width: 15%;
+  }
+
+  .shipStatFlexbox h3 {
+    font-size: 9px;
+  }
+
+  .shipStatFlexbox p {
+    font-size: 16px;
+  }
+
+  .shipStatFlexBox.shipSpan p {
+    font-size: 16px;
+  }
+
+  .bannerContainer11 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner11.jpg);
+  }
+
+  .bannerContainer12 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner12.jpg);
+  }
+
+  .bannerContainer12 {
+    background-position: right;
+  }
+
+  .suitTxt {
+    position: absolute;
+    left: 20%;
+    top: 140px;
+  }
+
+  .suitFlex {
+    width: 80%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    left: 20%;
+  }
+
+  .suitSpec {
+    width: 50%;
+    font-size: 16px;
+  }
+
+  .bannerContainer13 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner13.jpg);
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .shipContainer1 {
+    background-image: url(../img/finalImages/1366x768-Mac/bannerShip.jpg);
+  }
+
+  .bannerContainer9 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner9.jpg);
+  }
+
+  .bannerContainer11 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner11.jpg);
+  }
+
+  .bannerContainer13 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner13.jpg);
+  }
+
+  .banner10Txt p,
+  .banner9 p,
+  .banner12 p {
+    font-size: 24px;
+  }
+
+  .banner9 {
+    top: 34%;
+  }
+
+  .shipSpan {
+    font-size: 12px;
+  }
+
+  .suitTxt {
+    width: 70%;
+  }
+
+  .suitFlex p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .shipContainer1 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/bannerShip.jpg);
+  }
+
+  .bannerContainer9 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner9.jpg);
+  }
+
+  .bannerContainer11 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner11.jpg);
+  }
+
+  .bannerContainer13 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner13.jpg);
+  }
+
+  .banner10 {
+    top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .banner10Txt p,
+  .banner9 p,
+  .banner12 p {
+    font-size: 32px;
+  }
+
+  .banner10Txt {
+    margin-left: -1000px;
+  }
+
+  .shipStatFlexbox p {
+    font-size: 28px;
+  }
+
+  .shipSpan {
+    font-size: 16px;
+  }
+
+  .suitFlex {
+    top: 600px;
+  }
+
+  .suitTxt {
+    width: 70%;
+  }
+
+  .suitFlex p {
+    font-size: 24px;
+  }
+}
+
+/*////
+Launches.
+////*/
+@media screen and (min-width: 1024px) {
+  .launchContainer1 {
+    background-image: url(../img/finalImages/1024x768-Laptop/bannerLaunch.jpg);
+  }
+
+  .bannerContainer14 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner14.jpg);
+    margin-top: -28px;
+  }
+
+  .bannerContainer15 {
+    background-image: url(../img/finalImages/1024x768-Laptop/banner15.jpg);
+  }
+
+  .launchContainer {
+    width: 80%;
+    padding-left: 0px;
+    background-color: black;
+
+    margin: 0 auto;
+  }
+
+  .launchText,
+  .launchImgContainer {
+    width: 49%;
+    position: relative;
+  }
+
+  .launchImgBlock {
+    height: 100%;
+    width: 16px;
+  }
+
+  .launchBottomContainer {
+    height: 64px;
+  }
+
+  .validated-icon {
+    width: 4%;
+    top: 2px;
+  }
+
+  .btnContainer {
+    position: relative;
+  }
+
+  .btn-launch {
+    position: absolute;
+    top: 4px;
+  }
+
+  .btn-next {
+    right: 8px;
+  }
+
+  .txt-left {
+    font-size: 16px;
+  }
+
+  .txt-main {
+    font-size: 20px;
+    margin-top: 28px;
+  }
+
+  .launchContainer h2 {
+    font-size: 32px;
+  }
+
+  .launchFlex p {
+    font-size: 16px;
+  }
+
+  .previousLaunchHeader p {
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (min-width: 1366px) {
+  .launchContainer1 {
+    background-image: url(../img/finalImages/1366x768-Mac/bannerLaunch.jpg);
+  }
+
+  .bannerContainer14 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner14.jpg);
+    margin-top: -28px;
+  }
+
+  .bannerContainer15 {
+    background-image: url(../img/finalImages/1366x768-Mac/banner15.jpg);
+  }
+
+  .validated-icon {
+    width: 3%;
+    top: 2px;
+  }
+
+  .launchContainer h2 {
+    font-size: 40px;
+  }
+
+  .txt-left {
+    font-size: 20px;
+  }
+
+  .txt-main {
+    font-size: 26px;
+  }
+
+  .btn-launch {
+    top: 42px;
+    width: 100px;
+  }
+
+  .launchFlex p {
+    font-size: 16px;
+  }
+
+  .previousLaunchHeader p {
+    font-size: 24px;
+  }
+
+  .previousLaunchTxt p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .launchContainer1 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/bannerLaunch.jpg);
+  }
+
+  .bannerContainer14 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner14.jpg);
+    margin-top: -28px;
+  }
+
+  .bannerContainer15 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/banner15.jpg);
+  }
+
+  .launchContainer h2 {
+    font-size: 64px;
+  }
+
+  .txt-left {
+    font-size:32px;
+  }
+
+  .txt-main {
+    font-size: 40px;
+    margin-top: 44px;
+  }
+
+  .launchFlex  {
+    font-size: 24px;
+  }
+
+  .previousLaunchTxt p {
+    font-size: 24px;
+  }
+
+  .btn-launch {
+    top: 36px;
+    width: 160px;
+    height: 44px;
+    font-size: 24px;
+  }
+
+  .previousLaunchHeader p {
+    font-size: 36px;
+  }
+
+}
+
+/*////
+contact page.
+////*/
+@media screen and (min-width: 1024px) {
+  .contactContainer1 {
+    background-image: url(../img/finalImages/1024x768-Laptop/bannerContact.jpg);
+  }
+
+  form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .contactContainer1 {
+    background-image: url(../img/finalImages/1366x768-Mac/bannerContact.jpg);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .contactContainer1 {
+    background-image: url(../img/finalImages/1920x1080-Desktop/bannerContact.jpg);
+  }
+
+  .form-control {
+    font-size: 20px;
+  }
+
+  .formButton {
+    font-size: 24px;
+  }
+
+  .form-error {
+    font-size: 24px;
+  }
+
+  .formContainer h3 {
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,124 @@
+header {
+    position: fixed;
+    margin: 20px 16px;
+    color: white;
+    z-index: 5;
+}
+
+.logo{
+    width: 70%;
+
+}
+
+.navMobile{
+    display: block;
+    height: 35px;
+    width: 35px;
+    border-radius: 5px;
+    position: absolute;
+    right: 8px;
+    top: 0;
+}
+
+.navMobile p{
+    display: none;
+}
+
+
+/* Inspired by https://medium.com/@_jennyngo/a-beginners-guide-to-animating-hamburger-icons-using-css3-transitions-and-transforms-d2c0b65140e3
+    - ended up not using most of their code, but thought I'd mention it anyway. */
+.burgerIcons{
+    background-color: white;
+    height: 5px;
+    width: 32px;
+    position: absolute;
+    top: 45%;
+    left: 15%;
+    border-radius: 5px;
+}
+
+.burgerIcons::before{
+    content: "";
+    background-color: white;
+    height: 5px;
+    width: 32px;
+    position: absolute;
+    bottom: 200%;
+    width: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.burgerIcons::after{
+    content: "";
+    background-color: white;
+    height: 5px;
+    width: 32px;
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    left: 0;
+    border-radius: 5px;
+}
+
+.navTitleContainer{
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+
+    margin-top: 16px;
+    font-size: 20px;
+}
+
+/* //////////////
+////Link styling//// */
+a:link{
+    text-decoration: none;
+    color: white;
+}
+
+a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration:  underline solid #46B19C;
+    color: white;
+}
+
+a:active{
+    text-decoration: none;
+    color: white;
+}
+
+/* Navigation decoration */
+header a:link{
+    color: white;
+}
+
+header a:visited{
+    color: white;
+}
+header a:hover{
+    color: white;
+}
+header a:active{
+    color: #E36B37;
+    text-decoration:  underline solid #46B19C;
+}
+
+/* Extended nav when user hovers over "Spacecrafts" */
+.spacecraftNav{ 
+    position: absolute;
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+
+    margin-top: 8px;
+}
+.spacecraftNav a{
+    display: inline-block;
+    margin: 8px 12px;
+}

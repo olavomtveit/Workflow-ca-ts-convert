@@ -1,0 +1,36 @@
+main{
+    text-align: center;
+}
+
+.formContainer{
+    margin-top: 168px;
+    margin-bottom: 300px;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.form-group{
+    margin: 16px;
+    position: relative;
+}
+
+.form-control {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.form-error{
+    color: #E36B37;
+    display: none;
+}
+
+.validated-icon{
+    width: 5%;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: none;
+}
