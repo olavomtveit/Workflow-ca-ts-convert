@@ -8,8 +8,7 @@
     "start": "parcel src/index.html",
     "scripts": "tsc src/js/scripts.ts --watch",
     "contact": "tsc src/js/contact.ts --watch",
-    "apis": "tsc src/js/apis.ts --watch",
-    "ts": "tsc src/js/*.ts"
+    "apis": "tsc src/js/apis.ts --watch"
   },
   "keywords": [],
   "author": "",

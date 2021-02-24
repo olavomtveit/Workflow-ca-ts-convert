@@ -1,7 +1,7 @@
 # Typescript converting - Workflow CA
 
 # How to run the project:
-- npm run parcel (compiles the project)
+- npm start (compiles the project)
 - npm run scripts (will run the tsc command for the scripts.ts)
 - npm run apis (will run the tsc command for the apis.ts)
 - npm run contact (will run the tsc command for the contact.ts)

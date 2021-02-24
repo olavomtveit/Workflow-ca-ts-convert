@@ -64,12 +64,9 @@ function checkInputLength(value) {
     var trimmedValue = value.trim();
     console.log(value + " | " + trimmedValue);
     if (trimmedValue.length > 0) {
-        // this can be single line return.   return trimmedValue.length > 0;  because it will return a boolean so no need for the long if else
         return true;
     }
     else {
         return false;
     }
 }
-
-module.exports = validateForm;

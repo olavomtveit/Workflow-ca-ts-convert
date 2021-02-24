@@ -3,9 +3,8 @@
     "target": "ES6",
     "module": "es2015",
     "outDir": "./dist/js",
-    "strict": true
+    "strict": true,
   },
   "include": ["./src"],
   "exclude": ["node_modules"],
-
 }
