@@ -10,7 +10,8 @@
 - npm init -y
 - npm install -d parcel-bundler
 - npm i typescript
-
+- npm install --save-dev jest
+- npm i @babel/preset-typescript
 
 # Project Exam 1
 

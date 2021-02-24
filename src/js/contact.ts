@@ -1,33 +1,31 @@
-const contactForm = document.getElementById("contactForm");
+const contactForm: any = document.getElementById("contactForm");
 contactForm.addEventListener("submit", validateForm);
 
-function validateForm(event) {
+function validateForm(event: any) {
   event.preventDefault();
-// use a code formatter, pretteir to remove these blank lines
 
-
-  const firstName = document.getElementById("firstName");
-  const firstNameError = document.getElementById("firstNameError");
+  const firstName: any = document.getElementById("firstName");
+  const firstNameError: any = document.getElementById("firstNameError");
   const firstNameValue = firstName.value;
-  const firstNameValidated = document.getElementById("firstNameValidated");
+  const firstNameValidated: any = document.getElementById("firstNameValidated");
 
-  const lastName = document.getElementById("lastName");
-  const lastNameError = document.getElementById("lastNameError");
+  const lastName: any = document.getElementById("lastName");
+  const lastNameError: any = document.getElementById("lastNameError");
   const lastNameValue = lastName.value;
-  const lastNameValidated = document.getElementById("lastNameValidated");
+  const lastNameValidated: any = document.getElementById("lastNameValidated");
 
-  const email = document.getElementById("email");
-  const emailError = document.getElementById("emailError");
-  const invalidEmailError = document.getElementById("invalidEmailError");
+  const email: any = document.getElementById("email");
+  const emailError: any = document.getElementById("emailError");
+  const invalidEmailError: any = document.getElementById("invalidEmailError");
   const emailValue = email.value;
-  const emailValidated = document.getElementById("emailValidated");
+  const emailValidated: any = document.getElementById("emailValidated");
 
-  const message = document.getElementById("message");
-  const messageError = document.getElementById("messageError");
+  const message: any = document.getElementById("message");
+  const messageError: any = document.getElementById("messageError");
   const messageValue = message.value;
-  const messageValidated = document.getElementById("messageValidated");
+  const messageValidated: any = document.getElementById("messageValidated");
 
-   if (checkInputLength(firstNameValue)) {
+  if (checkInputLength(firstNameValue)) {
     firstNameError.style.display = "none";
     firstNameValidated.style.display = "block";
   } else {
@@ -43,12 +41,12 @@ function validateForm(event) {
 
   if (checkInputLength(emailValue)) {
     emailError.style.display = "none";
-    emailValidated.style.display ="block";
+    emailValidated.style.display = "block";
   } else {
     emailError.style.display = "block";
   }
 
-  function validateEmail(email) {
+  function validateEmail(email: string) {
     const regEx = /\S+@\S+\.\S+/;
     return regEx.test(email);
   }
@@ -65,16 +63,17 @@ function validateForm(event) {
     messageError.style.display = "block";
   }
 
-  if(messageValue.length >= 10 && validateEmail(emailValue)){
+  if (messageValue.length >= 10 && validateEmail(emailValue)) {
     messageValidated.style.display = "block";
   }
 }
 
-function checkInputLength(value) {
+function checkInputLength(value: string) {
   const trimmedValue = value.trim();
   console.log(value + " | " + trimmedValue);
 
-if (trimmedValue.length > 0) { // this can be single line return.   return trimmedValue.length > 0;  because it will return a boolean so no need for the long if else
+  if (trimmedValue.length > 0) {
+    // this can be single line return.   return trimmedValue.length > 0;  because it will return a boolean so no need for the long if else
     return true;
   } else {
     return false;

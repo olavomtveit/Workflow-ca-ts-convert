@@ -2,7 +2,6 @@ var contactForm = document.getElementById("contactForm");
 contactForm.addEventListener("submit", validateForm);
 function validateForm(event) {
     event.preventDefault();
-    // use a code formatter, pretteir to remove these blank lines
     var firstName = document.getElementById("firstName");
     var firstNameError = document.getElementById("firstNameError");
     var firstNameValue = firstName.value;
@@ -64,10 +63,13 @@ function validateForm(event) {
 function checkInputLength(value) {
     var trimmedValue = value.trim();
     console.log(value + " | " + trimmedValue);
-    if (trimmedValue.length > 0) { // this can be single line return.   return trimmedValue.length > 0;  because it will return a boolean so no need for the long if else
+    if (trimmedValue.length > 0) {
+        // this can be single line return.   return trimmedValue.length > 0;  because it will return a boolean so no need for the long if else
         return true;
     }
     else {
         return false;
     }
 }
+
+module.exports = validateForm;

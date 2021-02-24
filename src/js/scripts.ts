@@ -1,3 +1,5 @@
+window.navClicked = navClicked;
+
 function navClicked() {
   const navPressed = document.querySelector(
     ".navTitleContainer"
