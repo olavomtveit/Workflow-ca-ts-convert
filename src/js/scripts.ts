@@ -1,4 +1,5 @@
 window.navClicked = navClicked;
+window.navExtendedSpacecrafts = navExtendedSpacecrafts;
 
 function navClicked() {
   const navPressed = document.querySelector(

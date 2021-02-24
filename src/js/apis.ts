@@ -1,15 +1,16 @@
+window.nextLaunch = nextLaunch;
+window.previousLaunch = previousLaunch;
+
 const upcomingLaunchesUrl = `https://api.spacexdata.com/v3/launches/upcoming`;
 const launchContainer = document.getElementById(
   "launchContainer"
 ) as HTMLElement | null;
 
-let launchIndex = 0;
+let launchIndex: number = 0;
 let launchArray: any = [];
-// tody up file please blank lines
 
 fetch(upcomingLaunchesUrl)
   .then(function (response) {
-    // all good, next level, start using arrow functions and learning the when and when not to use them ok cool.
     return response.json();
   })
   .then(function (json) {
@@ -20,10 +21,8 @@ fetch(upcomingLaunchesUrl)
   });
 
 function launchSchedule(json: any) {
-  // choose better name, "launches" or "allLaunches" then use it directly with the launches.forEach(launch)
   json.forEach((launch: any) => {
-    //allLaunches = launch; // no needed.
-    const html = `<h2 id="nextLaunchName">${launch.mission_name}</h2>
+    const html: string = `<h2 id="nextLaunchName">${launch.mission_name}</h2>
     <div class="launchImgContainer">
       <div class="launchImgBlock"></div>
       <img class="launchImg" src="./img/spaceXConsole/starship_mk1_night_v2.jpg" alt="">
@@ -42,9 +41,7 @@ function launchSchedule(json: any) {
   });
   if (launchContainer) {
     launchContainer.innerHTML = launchArray[launchIndex];
-  } /* delete all comments*/
-
-  /* launchContainer.innerHTML = html; */
+  }
 }
 
 function nextLaunch() {
@@ -70,8 +67,8 @@ function previousLaunch() {
 }
 
 /* ////////////////////// */
-const pastLaunchesUrl = `https://api.spacexdata.com/v3/launches/past`;
-const launchCard = document.querySelector(".launchCard");
+const pastLaunchesUrl: string = `https://api.spacexdata.com/v3/launches/past`;
+const launchCard: any = document.querySelector(".launchCard");
 
 fetch(pastLaunchesUrl)
   .then(function (response) {
@@ -85,11 +82,9 @@ fetch(pastLaunchesUrl)
   });
 
 function pastLaunches(json: any) {
-  // choose better argument name, make it speak to the data, pastLaunches or something
-  let html = "";
+  let html: string = "";
 
   json.forEach((result: any) => {
-    // launches.forEach(launch)
     html += `<div class="launchFlex">
                 <div class="previousLaunchContainer plc-date previousLaunchTxt">
                     <p>${result.launch_year}</p>

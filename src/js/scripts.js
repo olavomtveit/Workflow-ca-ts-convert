@@ -1,3 +1,5 @@
+window.navClicked = navClicked;
+window.navExtendedSpacecrafts = navExtendedSpacecrafts;
 function navClicked() {
     var navPressed = document.querySelector(".navTitleContainer");
     if (navPressed) {
@@ -8,15 +10,6 @@ function navClicked() {
             navPressed.style.display = "none";
         }
     }
-    /* if ((navPressed: HTMLElement) => {
-      if (navPressed) {
-        if (navPressed.style.display === "none") {
-          navPressed.style.display = "flex";
-        } else {
-          navPressed.style.display = "none";
-        }
-      }
-    }) */
 }
 function navExtendedSpacecrafts() {
     var spacecraftNav = document.querySelector(".spacecraftNav");
